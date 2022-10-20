@@ -5,6 +5,7 @@ public class Loja {
 
     ArrayList<Pedido> listaPedidos = new ArrayList<Pedido>();
     Map<String, String> valores = new HashMap<String, String>();
+    
 
 
 

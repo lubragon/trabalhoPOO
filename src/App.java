@@ -5,6 +5,7 @@ import javax.swing.*;
 public class App {
     public static void main(String[] args) {
         Loja mercadinhoGnomo = new Loja();
+        Tela telinha = new Tela();
         
         Calendar data = Calendar.getInstance(); // SOCORRO!!
         JMenuBar menuBar = new JMenuBar();
@@ -51,16 +52,18 @@ public class App {
             }else{
                 indice += 1;
                 mercadinhoGnomo.criarPedido(indice, nome);
+                telinha.
+                
             }
         }
 
+        // 
 
 
 
 
 
 
-        //mercadinhoGnomo.criarPedido();
 
         // // Instanciando Pedido número 1
         // Pedido p1 = new Pedido(1, InOut.leString("Digite seu nome: "));
