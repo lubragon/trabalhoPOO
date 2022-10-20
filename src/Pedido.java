@@ -9,13 +9,13 @@ public class Pedido {
     double valorTotal;
     ArrayList<Mercadoria> carrinho = new ArrayList<Mercadoria>();
     Mercadoria item = new Mercadoria();
-
     
 
+    // 
+
     // !!
-    public Pedido(int id, String string) {
+    public Pedido(int id, String nomePessoa) {
         this.id = id;
-        this.nomePessoa = nomePessoa;
         
     }
 

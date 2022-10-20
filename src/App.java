@@ -7,20 +7,39 @@ public class App {
         Loja mercadinhoGnomo = new Loja();
         
         Calendar data = Calendar.getInstance(); // SOCORRO!!
-
         JMenuBar menuBar = new JMenuBar();
-        JButton b8787 = new JButton("Botão");
-
-        // Tentativa automatizada de instanciar o pedido.
-
-        mercadinhoGnomo.criarPedido();
-
+        JButton b1 = new JButton("Botão");
 
         // Instanciando Mercadorias da Loja
         Mercadoria chapeu = new Mercadoria("Chapeu", 1, 20, 100);
         Mercadoria galocha = new Mercadoria("Galocha", 2, 50, 100);
         Mercadoria cachorro = new Mercadoria("Cachorro", 3, 10, 40);
+        int indice = 0;
+        
 
+
+
+        // Tentativa automatizada de instanciar o pedido.
+        while (true){
+            String nome = InOut.leString("Digite seu nome: ");
+            InOut.MsgDeInformacao("Olá, " + nome + "!", "Vamos começar! ");
+            int escolha = InOut.leInt("Você gostaria de fazer um pedido?\nDigite [1] para iniciar as compras.\nDigite [2] para cancelar ");
+            if (escolha == 2){
+                InOut.MsgDeAviso("Poxa, " + nome + " :(", "Mó paia.");
+                break;
+            }else{
+                indice += 1;
+                mercadinhoGnomo.criarPedido(indice, nome);
+            }
+        }
+
+
+
+
+
+
+
+        //mercadinhoGnomo.criarPedido();
 
         // // Instanciando Pedido número 1
         // Pedido p1 = new Pedido(1, InOut.leString("Digite seu nome: "));
