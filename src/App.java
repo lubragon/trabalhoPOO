@@ -52,7 +52,7 @@ public class App {
             }else{
                 indice += 1;
                 mercadinhoGnomo.criarPedido(indice, nome);
-                telinha.
+                telinha.setVisible(true);
                 
             }
         }
