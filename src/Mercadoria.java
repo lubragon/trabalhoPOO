@@ -2,12 +2,12 @@ public class Mercadoria {
     public static final String InOut = null;
     String nomeMercadoria;
     int idMercadoria;
-    float precoMercadoria;
+    double precoMercadoria;
     int estoqueMercadoria;
 
     
 
-    public Mercadoria(String nomeMercadoria, int idMercadoria, float precoMercadoria, int estoqueMercadoria){
+    public Mercadoria(String nomeMercadoria, int idMercadoria, double precoMercadoria, int estoqueMercadoria){
         this.nomeMercadoria = nomeMercadoria;
         this.idMercadoria = idMercadoria;
         this.precoMercadoria = precoMercadoria; 
@@ -20,7 +20,7 @@ public class Mercadoria {
 
 
 
-    public float getPrecoMercadoria() {
+    public double getPrecoMercadoria() {
         return precoMercadoria;
     }
 
