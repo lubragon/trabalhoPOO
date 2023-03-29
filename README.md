@@ -1,2 +1,2 @@
-# Loja-POO
-Trabalho de Java - POO- Rosalen - 2022
+# Trabalho 
+Trabalho da disciplina Programação Orientada a Objetos.
